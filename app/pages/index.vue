@@ -1,5 +1,13 @@
 <script lang="ts" setup></script>
 
 <template>
-    <div>hello world</div>
+    <div>
+        <span>
+            {{ $t("hello_world") }}
+        </span>
+        <UButton
+            to="/test"
+            label="test"
+        />
+    </div>
 </template>
