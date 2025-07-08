@@ -1,8 +1,13 @@
+<script setup lang="ts">
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
+</script>
+
 <template>
-    <div>
+    <UApp>
+        <SpeedInsights />
         <NuxtRouteAnnouncer />
-        <UApp>
-            <div class="w-50 bg-red-500">{{ $t("hello_world") }}</div>
-        </UApp>
-    </div>
+        <NuxtLayout>
+            <NuxtPage />
+        </NuxtLayout>
+    </UApp>
 </template>
